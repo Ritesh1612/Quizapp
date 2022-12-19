@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvtotalquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:textColor="@color/blue"
+        android:text="Totalquestion"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="58dp"
+            android:text="Question"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14ssp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivimage"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/quizpic1"
+            app:layout_constraintStart_toStartOf="@+id/tvquestion"
+            app:layout_constraintTop_toBottomOf="@+id/tvquestion" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/appCompatTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Options :"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintStart_toStartOf="@+id/ivimage"
+            app:layout_constraintTop_toBottomOf="@+id/ivimage" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnoption1"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/optbtnshape"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="Option 1"
+            app:layout_constraintEnd_toEndOf="@+id/ivimage"
+            app:layout_constraintStart_toStartOf="@+id/ivimage"
+            app:layout_constraintTop_toBottomOf="@+id/appCompatTextView" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnoption2"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/optbtnshape"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="Option 2"
+            app:layout_constraintEnd_toEndOf="@+id/btnoption1"
+            app:layout_constraintStart_toStartOf="@+id/btnoption1"
+            app:layout_constraintTop_toBottomOf="@+id/btnoption1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnoption3"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/optbtnshape"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="Option 3"
+            app:layout_constraintEnd_toEndOf="@+id/btnoption2"
+            app:layout_constraintStart_toStartOf="@+id/btnoption2"
+            app:layout_constraintTop_toBottomOf="@+id/btnoption2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnoption4"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/optbtnshape"
+            android:gravity="start"
+            android:padding="@dimen/_10sdp"
+            android:text="Option 4"
+            app:layout_constraintEnd_toEndOf="@+id/btnoption3"
+            app:layout_constraintStart_toStartOf="@+id/btnoption3"
+            app:layout_constraintTop_toBottomOf="@+id/btnoption3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnnextque"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/btnnextshape"
+            android:text="Next"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@+id/btnoption4"
+            app:layout_constraintTop_toBottomOf="@+id/btnoption4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvalert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:drawableStart="@drawable/alert"
+            android:text="You did't choose any option"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_12ssp"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="@+id/btnoption4"
+            app:layout_constraintTop_toBottomOf="@+id/btnoption4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include
+        android:id="@+id/incelebration"
+        layout="@layout/finishedscreen"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
